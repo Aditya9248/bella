@@ -1,0 +1,14 @@
+{
+  "name": "bella",
+  "version": "1.0.0",
+  "description": "My first DevOps practice project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Aditya",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
