@@ -22,3 +22,10 @@ spec:
         image: aditya9248/bella:latest
         ports:
         - containerPort: 3000
+
+        envFrom:
+        - configMapRef:
+            name: bella-config
+
+        - secretRef:
+            name: bella-secret    

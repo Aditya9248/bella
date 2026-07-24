@@ -26,8 +26,8 @@ jobs:
           push: true
           tags: aditya9248/bella:latest
 
-      - name: Verify Kubernetes Cluster
+      - name: Deploy to  Kubernetes
         run: |
-          kubectl get nodes
-          kubectl get deployments
-          kubectl get pods   
+          kubectl apply -f k8s/
+          kubectl rollout restart deployment bella-deployment
+          kubectl rollout status deployment bella-deployment 

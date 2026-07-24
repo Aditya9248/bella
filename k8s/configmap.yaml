@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bella-config
+
+data:
+  APP_NAME: "Bella"
+  ENVIRONMENT: "Development"
+  COMPANY: "Aditya Technologies"
