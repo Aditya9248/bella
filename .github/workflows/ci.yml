@@ -25,3 +25,9 @@ jobs:
           context: .
           push: true
           tags: aditya9248/bella:latest
+
+      - name: Verify Kubernetes Cluster
+        run: |
+          kubectl get nodes
+          kubectl get deployments
+          kubectl get pods   
